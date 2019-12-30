@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
 
 class BoratAllController extends Controller
 {
@@ -14,7 +12,7 @@ class BoratAllController extends Controller
 
         ]);
 
-        $packages = DB::table('packages');
+        $packages = DB::table('packages')->orderBy('created_at');
 
         $this->addResult('packages', $packages->get());
 
