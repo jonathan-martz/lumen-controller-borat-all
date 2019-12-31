@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 
-class BoratAllController extends Controller
+class BoratReposController extends Controller
 {
     public function select()
     {

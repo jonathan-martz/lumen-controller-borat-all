@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::post('/repos/all', [
+Route::post('/repos', [
     'middleware' => ['auth', 'xss', 'https'],
-    'uses' => 'App\Http\Controllers\BoratAllController@select'
+    'uses' => 'App\Http\Controllers\BoratReposController@select'
 ]);

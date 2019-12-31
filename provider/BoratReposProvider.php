@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class BoratAllProvider extends ServiceProvider
+class BoratReposProvider extends ServiceProvider
 {
     /**
      * Register any application services.
