@@ -4,6 +4,10 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Class BoratReposProvider
+ * @package App\Providers
+ */
 class BoratReposProvider extends ServiceProvider
 {
     /**
